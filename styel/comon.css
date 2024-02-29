@@ -1,0 +1,63 @@
+@charset "utf-8";
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+
+/* * {margin: 0;} */
+body, h1, h2, ul, p { margin: 0; padding: 0;}
+li {list-style: none;}
+a {text-decoration: none;}
+address {font-size: normal;}
+
+body {font-family: 'Noto Sans KR', san-serif;}
+
+#header {height: 42px; border-bottom: 1px solid black;
+    background: linear-gradient(#8e0000, #700000);}
+#header h1 { text-align: center; line-height: 42px;
+    color: #fff; text-transform: capitalize;
+
+}
+#header a { position: absolute; height: 32px; top: 0; background: url(../image/sprites.png) no-repeat;
+            text-indent: 100%; overflow: hidden; 
+            
+}
+#header .btn {left: 4px;  width: 62px; }
+#header .toggle {right: 4px; width: 32px;
+        background-position-x: right;  
+    }
+
+/* toggle nav */
+#toggleNav { padding: 20px; background: #808080; }
+#toggleNav ul  { background: #fff; display: flex; flex-wrap: wrap;}
+#toggleNav ul li {width: 80px; height: 28px; }
+
+#topNav { border-bottom: 2px solid #000; }
+#topNav ul {display: flex; }
+#topNav ul li { width: 25%; }
+#topNav ul li a { display: block; background: #820e0e; height: 35px;
+                color: #fff; text-align: center; line-height: 35px;  }
+#topNav ul li a:hover { background: aqua; }
+
+
+#bottomNav { border-bottom: 1px solid black;}
+#bottomNav ul {display: flex;  }
+#bottomNav ul li {width: 20%; }
+#bottomNav ul li a{ position: relative; display: block; height: 35px;
+    color: #000; text-align: center; line-height: 35px;  
+ }
+
+ #bottomNav ul li a::after {content: ""; 
+    position: absolute; top: 10px; left: -1px;
+    width: 1px; height: 15px; background: #000;
+}
+
+#mainSection { padding-top: 10px; padding-bottom: 10px;}
+#mainSection header {  }
+#mainSection  p { margin-bottom: 15px; line-height: 30px;}
+
+
+#footer { border-top: 3px solid black; text-align: center;}
+#footer address { font-size: 24px; text-transform: uppercase;}
+#footer small {font-style: italic;}
+
+
+
